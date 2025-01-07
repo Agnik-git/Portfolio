@@ -1,0 +1,896 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Parkinsans:wght@300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins','Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    background: white;
+    scroll-behavior: smooth;
+    transition: 0.5s all ease;
+}
+
+#navbar{
+    display: flex;
+    max-width: 64%;
+    margin: 2rem auto;
+    justify-content: space-between;
+    align-items: center;
+}
+.head-name h1{
+    font-weight: 500;
+    transition: 0.5s all ease;
+    transition-delay: 0.1s;
+}
+.head-name h1:hover{
+    cursor: pointer;
+}
+#navbar .links ul{
+    display: flex;
+    font-size: 1rem;
+    list-style: none;
+    
+    
+}
+#navbar .links ul li {
+    margin: 0.5rem;
+    text-decoration: none;
+    color: black;
+    transition: 0.5s all ease;
+    transition-delay: 0.1s;
+}
+#navbar .links ul li a{
+    text-decoration: none;
+    color: black;
+    transition: 0.5s all ease;
+    transition-delay: 0.1s;
+}
+#navbar .links ul li:hover{
+    transform: scale(1.2);
+    text-decoration: underline;
+    text-underline-offset: 0.6rem;
+}
+#navbar .links ul li a:hover{
+color: grey;
+}
+.hero-page{
+    max-width: 70%;
+    height: fit-content;
+    margin: 5rem auto;
+    display: flex;
+    position: relative;
+}
+.menu{
+    position: absolute;
+    font-size: 1rem;
+    background: rgb(189, 189, 189);
+    left: 70%;
+    top:-10%;
+    padding: 1rem;
+    width: 5.5rem;
+    display: none ;
+    transition: 1s all ease;
+    transition-delay: 0.5s;
+    
+}
+#menu-icon{
+    display: none ;
+}
+.menu a{
+    font-size: 1rem;
+    text-decoration: none;
+    color: black;
+}
+.menu li{
+    list-style: none;
+}
+.hero-page .img-holder{
+    padding: 3rem;
+    box-sizing: border-box;
+    display: flex;
+}
+.hero-page .img-holder  img{
+    max-height: 30rem;
+    border-radius: 0px 150px 150px 150px;
+
+}
+.hero-page .hero-info{
+    text-align: center;
+    margin: 10rem 2rem 10rem 2rem;
+}
+.hero-page .hero-info h1{
+    color: black;
+}
+.hero-page .hero-info span{
+    color: grey;
+    font-size: 0.9rem;
+    text-wrap:break-word;
+}
+.hero-page .hero-info p{
+    color: grey;
+}
+.hero-page .hero-info #info{
+    padding: 1rem 4rem;
+    box-sizing: border-box;
+    text-wrap:break-word;
+    margin: 0.5rem;
+}
+.hero-page .hero-info .button-holder{
+    margin: 0.5rem 1rem;
+}
+.hero-page .hero-info .button-holder button{
+    max-width: 15rem;
+    height: 3rem;
+    text-align: center;
+    margin:0rem 0.5rem;
+    padding: 1rem;
+    font-size: 0.8rem;
+    box-sizing: border-box;
+    border-radius: 5rem;
+    border: none;
+    border: 0.1rem solid black;
+    background: white;
+    font-weight: 600;
+    transition: 0.5s all ease;
+    transition-delay: 0.1s;
+}
+.hero-page .hero-info .button-holder #contact_btn{
+    background: black;
+    color: white;
+    position: relative;
+    overflow: hidden;
+    transition: 0.5s all ease;
+    transition-delay: 0.1s;
+}
+.socials{
+    max-width: 100%;
+    margin: 1rem;
+    font-size: 2.5rem;
+}
+.socials i{
+    transition: 0.5s all ease;
+    transition-delay: 0.1s;
+}
+.socials i:hover{
+    transform: scale(0.8);
+    cursor: pointer;
+    color: #7fa4c8;
+    
+}
+#contact_btn:hover{
+    background: white !important;
+    color: black !important;
+    cursor: pointer;
+    transform: scale(0.9);
+    box-shadow: 2px 5px 0px #7fa4c8;
+}
+#download_btn:hover{
+    color: white;
+    background: black;
+    cursor: pointer;
+    box-shadow: 2px 5px 0px #7fa4c8;
+    transform: scale(0.9);
+}
+.about-page{
+    max-width: 70%;
+    margin: 5rem auto;
+}
+.about-page .header-text{
+   
+    text-align: center;
+    
+}
+.about-page .header-text h2{
+    font-size:1rem;
+    font-weight: 400;
+    color: grey;
+}
+.about-page .header-text h1{
+    font-size: 3rem;
+    font-weight: 600;
+}
+.about-page .info-box{
+    
+    display: flex;
+}
+.about-page .info-box .about-info{
+    margin: 1rem;
+}
+.info-box .img-holder img{
+    max-height: 25rem;
+    border-radius: 50rem 50rem 50rem 50rem;
+    margin-left: 2rem;
+}
+.about-info .cards-holder{
+    display: flex;
+    margin: 5rem 0rem 0.5rem 0rem;
+    gap: 4rem;
+}
+.cards-holder .exp{
+    background: white;
+    width: 20rem;
+    text-align: center;
+    font-size: 2rem;
+    box-sizing: border-box;
+    border-radius: 1rem;
+    border: 1px solid grey;
+    padding: 1rem;
+}
+.cards-holder .exp #medal{
+    font-size: 3rem;
+}
+.cards-holder .exp h1{
+    font-size: 2rem;
+}
+.cards-holder .exp h2{
+    font-size: 1.5rem;
+}
+.cards-holder .exp p{
+    font-size: 1rem;
+}
+.cards-holder .edu{
+    background: white;
+    width: 20rem;
+    text-align: center;
+    font-size: 2.5rem;
+    box-sizing: border-box;
+    border-radius: 1rem;
+    border: 1px solid grey;
+    padding: 1rem;
+}
+.cards-holder .edu h1{
+    font-size: 2rem;
+}
+.cards-holder .edu p{
+    font-size: 1rem;
+}
+.about-info .desc{
+    margin: 1rem 0rem 1rem 0rem;
+    text-align: start;
+    font-size: 0.9rem;
+}
+.exp-page{
+    max-width: 80%;
+    margin: 0rem auto;
+    margin-bottom: 5rem;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+.exp-page .header-text{
+    text-align: center;
+}
+.exp-page .header-text h2{
+    font-size: 1rem;
+    font-weight: 400;
+    color:grey;
+}
+.exp-page .header-text h1{
+    font-size: 3rem;
+}
+.exp-div{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+.front-end{
+    background: white;
+    max-width: 30rem;
+    padding: 4rem 2rem 4rem 4rem;
+    box-sizing: border-box;
+    border: 1px solid grey;
+    border-radius: 1rem;
+}
+.front-end h1{
+    font-size: 2rem;
+}
+.front-end i{
+    font-size: 1.5rem;
+}
+.back-end{
+    background: white;
+    max-width: 30rem;
+    padding: 4rem 2rem 4rem 4rem;
+    box-sizing: border-box;
+    border: 1px solid grey;
+    border-radius: 1rem;
+}
+.back-end h1{
+    font-size: 2rem;
+}
+.back-end i{
+    font-size: 1.5rem;
+}
+.services-page{
+    max-width: 80%;
+    margin: 5rem auto;
+}
+.services-page .header-text{
+    text-align: center;
+}
+.services-page .header-text h1{
+    font-size: 3rem;
+}
+.services-page .header-text h2{
+    font-size: 1rem;
+    font-weight: 400;
+    color: grey;
+}
+.services-versions{
+    display: flex;
+    padding: 2rem;
+    gap: 2rem;
+}
+.services-versions div{
+    text-align: center;
+    padding: 1rem;
+    box-sizing: border-box;
+    border: 1px solid grey;
+    border-radius: 1rem;
+    background: white;
+    transition: 1s all ease;
+    transition-delay: 0.2s;
+}
+.services-versions div p{
+    color: grey;
+    transition: 1s all ease;
+    transition-delay: 0.2s;
+}
+.services-versions h1{
+    margin: 2rem;
+    font-size: 1.5rem;
+    transition: 1s all ease;
+    transition-delay: 0.2s;
+}
+.services-versions div:hover{
+    scale: 0.9;
+    background:#7fa4c8 ;
+    cursor: grab;
+
+}
+.services-versions div:hover p{
+    color: white;
+}
+.services-versions div:hover h1{
+    color: white;
+}
+.contact{
+    margin: 5rem auto;
+    max-width: 80%;
+    text-align: center;
+}
+.contact h2{
+    color: grey;
+    font-weight: 400;
+    font-size: 0.9rem;
+}
+.mail-container{
+    display: flex;
+    border: 1px solid grey;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+}
+.mail-container i{
+    font-size: 1.5rem;
+}
+.mail-container p{
+    margin-left: 0.5rem;
+    margin-right: 2rem;
+    transition: 1s all ease;
+    transition-delay: 0.2 ;
+}
+.mail-container a{
+    text-decoration: none;
+    color: black;
+    transition: 1s all ease;
+    transition-delay: 0.2 ;
+}
+.mail-container p:hover a{
+    text-decoration: underline;
+    text-underline-offset:0.5rem;
+    color: grey;
+}
+#linkdin:hover{
+    text-decoration: underline;
+    text-underline-offset:0.5rem;
+    color: grey;
+    cursor: pointer;
+}
+.mail-holder{
+    display: flex;
+    justify-content: center;
+    
+}
+.credits{
+    text-align: center;
+    margin: 5rem 5rem 5rem 5rem;
+}
+.menu{
+    display: none;
+}
+@media (max-width:2035px) {
+    .hero-page .hero-info #info{
+        padding: 1rem;
+        box-sizing: border-box;
+        text-wrap:break-word;
+    }
+}
+@media (max-width:1440px) {
+    .hero-page .hero-info #info{
+        padding: 0rem;
+        box-sizing: border-box;
+        text-wrap:break-word;
+    }
+    .about-page .info-box .about-info{
+        padding: 0rem;
+
+    }
+    .about-info .cards-holder{
+        gap: 2rem;
+    }
+    .about-info .cards-holder div{
+        width: 19rem;
+    }
+    .info-box .img-holder img{
+        margin: 0rem;
+    }
+}
+@media (max-width:1366px) {
+    .about-info .cards-holder div{
+        width: 15rem;
+    }
+    .about-info .cards-holder .edu h1{
+        font-size: 1.5rem;
+    }
+    .about-info .cards-holder .exp h1{
+        font-size: 1.5rem;
+    }
+    .about-info .cards-holder{
+        gap: 1rem;
+    }
+    .about-page .info-box .about-info{
+        margin-left: 3rem;
+    }
+}
+@media (max-width:1165px) {
+    .hero-page .hero-info{
+        text-align: center;
+        margin: 5rem 2rem 10rem 2rem;
+    }
+    .info-box .img-holder img{
+        max-height: 20rem;
+       }
+       .info-box .cards-holder{
+        margin-top: 1rem;
+       }
+       .desc{
+        font-size: 0.7rem !important;
+       }
+}
+
+@media (max-width:1102px) {
+    .hero-page .hero-info #hide{
+        display: none;
+    }
+}
+@media (max-width:1089px) {
+    .hero-page{
+        margin-top: 7rem;
+        margin-bottom: 10.5rem;
+    }
+    .hero-page .img-holder  img{
+        max-height: 25rem;
+    }
+    .socials{
+        font-size: 1.8rem;
+    }
+    .about-page .info-box .about-info{
+        margin-left: 1rem;
+    }
+    .services-versions{
+        flex-wrap: wrap;
+
+    }
+    .services-versions div{
+        font-size: 0.8rem;
+        text-align: justify;
+        padding: 1rem;
+        box-sizing: border-box;
+    }
+    .services-versions h1{
+        text-align: center;
+        margin: 1rem;
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width:1000px) {
+    .hero-page{
+        max-width: 95%;
+        margin-top:10rem;
+    }
+    .hero-page .hero-info .button-holder button{
+        max-width: 6rem;
+        height: 2.5rem;
+        padding: 0.5rem;
+        font-size:0.6rem ;
+        border-radius: 0.2rem;
+    }
+    #navbar{
+        max-width: 100%;
+        margin: 2rem 5rem;
+    }
+    .about-page{
+        max-width: 95%;
+    }
+    .info-box .img-holder img{
+        margin-left: 5rem;
+    }
+    .exp-page{
+        max-width: 100%;
+    }
+    .front-end{
+        padding: 1rem;
+        box-sizing: border-box;
+    }
+    .back-end{
+        padding: 1rem;
+        box-sizing: border-box;
+    }
+}
+@media (max-width:984px) {
+    .hero-page .hero-info .button-holder{
+        margin: 1rem 0rem;
+    }
+    .front-end{
+        padding: 1rem;
+        box-sizing: border-box;
+        max-width: 20rem ;
+    }
+    .back-end{
+        padding: 1rem;
+        box-sizing: border-box;
+        max-width: 20rem ;
+    }
+}
+@media (max-width:896px) {
+    .hero-page .hero-info h1{
+        font-size: 1.5rem;
+    }
+    .hero-page .hero-info h2{
+        font-size: 1.1rem;
+    }
+    .info-box .img-holder img{
+        margin-left: 2rem;
+    }
+}
+@media (max-width:833px) {
+    .hero-page{
+        max-width: 90%;
+    }
+    .hero-page .hero-info .button-holder button{
+        max-width: 5rem;
+        font-size:0.55rem ;
+        font-weight: 700;
+        border-radius: 0.2rem;
+    }
+    .info-box .img-holder img{
+        margin-left: 0rem;
+        max-height: 18rem;
+    }
+    .info-box{
+        padding: 2rem;
+        box-sizing: border-box;
+    }
+    .about-info .cards-holder .edu{
+        width: 13rem;
+    }
+    .about-info .cards-holder .epx{
+        width: 5rem !important;
+    }
+}
+@media (max-width:768px) {
+   .links a{
+    font-size: 0.7rem;
+   }
+    .hero-page .hero-info #info{
+        font-size: 0.8rem
+    }
+    .hero-page{
+        margin-bottom: 3rem;
+    }
+    .desc{
+        padding: 0rem 4rem 0rem 4rem;
+        margin: 0rem !important;
+        text-align: center !important;
+    }
+}
+@media (max-width:768px){
+    .about-info .cards-holder{
+        display: block;
+    }
+    .about-info .cards-holder .exp{
+        width: 18rem !important;
+        margin: 2rem;
+    }
+    .about-info .cards-holder .edu{
+        width: 18rem !important;
+        margin: 2rem;
+    }
+    .info-box .img-holder img{
+        margin-left: calc(18.5rem - 5rem);
+        max-height: 18rem !important;
+    }
+    .about-page .info-box{
+        display: block;
+    }
+    .about-info .cards-holder{
+        display: flex;
+        margin-top: 1rem;
+    }
+}
+@media (max-width:704px) {
+    .info-box .img-holder img{
+        margin-left: 12rem;
+    }
+    .front-end h1{
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+    .front-end span{
+        font-size: 0.8rem;
+        padding-left: 0.5rem;
+    }
+    .back-end h1{
+        font-size: 1rem;
+        margin-bottom: 1rem;
+        
+    }
+    .back-end span{
+        font-size: 0.8rem;
+        padding-left: 0.5rem;
+    }
+}
+@media (max-width:642px) {
+    .info-box .img-holder img{
+        margin-left: 10rem;
+    }
+}
+@media (max-width:637px) {
+    #navbar{
+        margin: 2rem 3rem 2rem 3rem;
+    }
+    .hero-page{
+        max-width: 100%;
+    }
+    .hero-page .img-holder img{
+        max-height: 24rem;
+    }
+    .info-box .img-holder img{
+        margin-left: 9rem ;
+    }
+    .cards-holder .edu{
+        height: 9rem;
+        margin: 0.5rem !important;
+        padding: 0.2rem 0.2rem 0.6rem 0.2rem;
+    }
+    .cards-holder .exp{
+        height: 9rem;
+        padding: 0.6rem;
+        margin: 0.5rem !important;
+    }
+    .cards-holder .exp i{
+        font-size: 1.7rem !important;
+    }
+    .cards-holder .exp h1{
+        font-size: 0.9rem !important;
+    }
+    .cards-holder .exp p{
+        font-size: 0.8rem !important;
+        padding-top: 0.5rem;
+        box-sizing: border-box;
+    }
+    .cards-holder .edu i{
+        font-size: 1.5rem;
+    }
+    .cards-holder .edu h1{
+        font-size: 0.9rem !important;
+    }
+    .cards-holder .edu p{
+        font-size: 0.8rem !important;
+        padding: 0.5rem;
+        box-sizing: border-box;
+    }
+}
+@media (max-width:587px) {
+    .info-box .img-holder img{
+        margin-left: calc(10rem - 2rem);
+    }
+}
+@media (max-width:565px) {
+    #navbar{
+        padding-right: 1rem;
+    }
+    .hero-page{
+        max-height: 20rem;
+    }
+    #navbar{
+        max-width: 100%;
+        margin-left:1rem;
+        margin-right:1rem;
+    }
+    .button-holder{
+        margin-top: 0.7rem !important;
+    }
+    .hero-page .hero-info .button-holder button{
+        max-width: 4rem;
+        font-size:0.55rem ;
+        font-weight: 700;
+        border-radius: 0.2rem;
+    }
+    .hero-page .hero-info h1{
+        font-size: 1.2rem;
+    }
+    .hero-page .hero-info h2{
+        font-size: 0.9rem;
+    }
+    .hero-page .hero-info #info{
+        font-size: 0.7rem;
+        margin-bottom: 0rem;
+    }
+    .hero-page .img-holder img{
+        max-height: 20rem;
+    }
+    .hero-page .img-holder{
+        padding: 1.2rem;
+    }
+    .hero-info{
+        margin-top: 2rem !important;
+    }
+    .socials{
+        font-size: 1.3rem;
+    }
+    .info-box .img-holder img{
+        max-height: 15rem !important;
+    }
+    .about-info .desc{
+        font-size: 0.7rem;
+    }
+    
+}
+@media (max-width:507px) {
+    .cards-holder .edu p{
+        font-size: 0.6rem !important;
+        padding: 0.5rem;
+        box-sizing: border-box;
+        font-weight: 600;
+    }
+    .cards-holder .exp p{
+        font-size: 0.6rem !important;
+        padding-top: 0.5rem;
+        box-sizing: border-box;
+        font-weight: 600;
+    }
+    .desc{
+        padding: 0rem;
+        text-align: justify !important;
+    }
+}
+@media (max-width:482px) {
+    .cards-holder .edu p{
+        font-size: 0.6rem !important;
+        padding: 0.5rem;
+        box-sizing: border-box;
+        font-weight: 600;
+    }
+    .cards-holder .exp p{
+        font-size: 0.6rem !important;
+        padding-top: 0.5rem;
+        box-sizing: border-box;
+        font-weight: 600;
+    }
+    .back-end span{
+        font-size: 0.6rem;
+        font-weight: bold;
+    }
+    .front-end span{
+        font-size: 0.6rem;
+        font-weight: bold;
+    }
+}
+@media (max-width:477px) {
+    .info-box .img-holder img{
+       margin-left: calc(7.5rem - 1rem);
+    }
+    .head-name h1{
+        font-size: 0.8rem;
+    }
+    .links a{
+        font-size: 0.5rem;
+        font-weight: 700;
+    }
+}
+@media (max-width:446px) {
+    #navbar{
+        max-width: 100%;
+        margin-left:1rem;
+    }
+    .hero-page .img-holder img{
+        max-height: 15rem;
+    }
+    .hero-info{
+        margin-top: 2rem !important;
+    }
+    .hero-page {
+        margin:0rem;
+    }
+    .hero-page .hero-info #info{
+        font-size: 0.6rem;
+    }
+    .info-box .img-holder img{
+        max-height: 13rem !important;
+
+    }
+}
+@media (max-width:425px) {
+    .links{
+        display: none;
+    }
+    .info-box .img-holder img{
+        max-height: 11rem !important;
+
+    }
+    #menu-icon{
+        display: flex;
+        font-size: 2rem;
+    }
+    #menu-icon:focus{
+        transform:scale(0.9);
+    }
+    #navbar{
+        padding-right: 1rem;
+    }
+    .menu{
+        display: none;
+        background: hsla(0, 0%, 84%, 0.692);
+        backdrop-filter: blur(15px);
+        border: 1px solid grey;
+    }
+}
+@media (max-width:402px) {
+    .hero-page .hero-info h1{
+        font-size: 1rem;
+    }
+    .hero-page .hero-info h2{
+        font-size: 0.8rem;
+    }
+    .hero-page .hero-info #info{
+        font-size: 0.6rem
+    }
+    .hero-page .hero-info .button-holder button{
+        font-size: 0.5rem;
+    }
+    .hero-page .img-holder{
+        padding-right: 0rem;
+    }
+    .info-box .img-holder img{
+        max-height: 10rem !important;
+
+    }
+}
+
+@media (max-width:382px) {
+    .hero-page .hero-info .button-holder button{
+        max-width:3.5rem ;
+    }
+    .button-holder{
+        margin-bottom: 0.5rem !important;
+    }
+    .socials{
+        margin-top:0.3rem;
+    }
+    .info-box .img-holder img{
+        margin-left: 5rem !important;
+
+    }
+}

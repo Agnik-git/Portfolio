@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Agnik Mondal's portfolio showcasing his work in web development, design, and more.">
+    <title>Agnik|Mondal</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav id="navbar">
+        <div class="head-name">
+            <h1>Agnik Mondal</h1>
+        </div>
+        <i id="menu-icon" class='bx bx-menu-alt-right' ></i>
+        <div class="links">
+            <ul>
+                <li><a href="#about-info">About</a></li>
+                <li><a href="#exp-page">Experience</a></li>
+                <li><a href="#serv">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="hero-page">
+        <div id="slide" class="menu">
+            <ul>
+                <li><a href="#about-info">About</a></li>
+                <li><a href="#exp-page">Experience</a></li>
+                <li><a href="#serv">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        <div class="img-holder">
+            <img src="agnik.jpg" alt="">
+        </div>
+        <div class="hero-info">
+            <span id="greet">Hello, I'm</span>
+            <h1>Agnik Mondal</h1>
+            <h2>Web Developer</h2>
+            <p id="info">Hi, I'm Agnik, a passionate designer and developer with a keen eye for creating intuitive, user-centric digital experiences.
+                 <span id="hide">With skills in UI/UX design, animation, and front-end development, I craft engaging visuals and smooth interactions to bring ideas to life.</span></p>
+            <div class="button-holder">
+                <button id="download_btn" type="button">Download CV</button>
+                <button onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})" id="contact_btn" type="button">Contact Info</button>
+            </div>
+            <div class="socials">
+                <i onclick="window.open('https://github.com/Agnik-git','_blank')" class='bx bxl-github'></i>
+                <i onclick="window.open('https://www.linkedin.com/in/agnik-mondal-8b8654344/','_blank')"class='bx bxl-linkedin-square' ></i>
+                <i onclick="window.open('https://www.instagram.com/agnix.zip/?hl=en','_blank')"class='bx bxl-instagram-alt' ></i>
+            </div>
+        </div>
+    </div>
+    <div id="about-info" class="about-page">
+        <div class="header-text">
+            <h2>Get To Know More</h2>
+            <h1>About Me</h1>
+        </div>
+        <div class="info-box">
+            <div class="img-holder">
+                <img src="agnik2.jpg" alt="">
+            </div>
+            <div class="about-info">
+                <div class="cards-holder">
+                    <div class="exp">
+                        <i id="medal" class='bx bxs-medal' ></i>
+                        <h1>Experience</h1>
+                        <p>1+ Years</p>
+                        <p>Fontend Development</p>
+                    </div>
+                    <div class="edu">
+                        <i class='bx bxs-user-pin' ></i>
+                        <h1>Education</h1>
+                        <p>Bachelor of Computer Applications</p>
+                    </div>
+                </div>
+                <div class="desc">
+                    <p>I am a passionate UI/UX designer and FullStack developer, crafting intuitive, user-centered designs and seamless,
+                        responsive web experiences. With creativity and technical skills, I transform ideas into impactful, interactive, and
+                        visually engaging digital products.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="exp-page" class="exp-page">
+        <div class="header-text">
+            <h2>My</h2>
+            <h1>Experience</h1>
+        </div>
+        <div class="exp-div">
+            <div class="front-end">
+                <h1>Frontend Development</h1>
+                <div class="icons-holder">
+                    <i class='bx bxs-badge-check'></i><span>HTML [Experienced]</span>
+                    <br>
+                    <i class='bx bxs-badge-check'></i><span>CSS [Experienced]</span>
+                    <br>
+                    <i class='bx bxs-badge-check'></i><span>SASS [Experienced]</span>
+                    <br>
+                    <i class='bx bxs-badge-check'></i><span>JAVASCRIPT [Intermediate]</span>
+                    
+                </div>
+            </div>
+            <div class="back-end">
+                <h1>Backend Development</h1>
+                <i class='bx bxs-badge-check'></i><span>NODEJS [Basic]</span>
+                <br>
+                <i class='bx bxs-badge-check'></i><span>EXPRESSJS [Basic]</span>
+                <br>
+                <i class='bx bxs-badge-check'></i><span>MYSQL [Intermediate]</span>
+                <br>
+                <i class='bx bxs-badge-check'></i><span>GIT [Intermediate]</span>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="serv" class="services-page">
+        <div class="header-text">
+            <h2>I Provide</h2>
+            <h1>Services</h1>
+        </div>
+        <div class="services-versions">
+            <div class="Design">
+                <h1>Designing UI/UX</h1>
+                <p>Creating intuitive, user-centered designs that prioritize usability and aesthetic appeal. Transforming ideas into
+                    beautiful digital interfaces.</p>
+            </div>
+            <div class="Front-end-dev">
+                <h1>Frontend Development</h1>
+                <p>Building interactive, responsive websites with HTML, CSS, and JavaScript. Ensuring seamless user experiences across
+                    all devices.</p>
+            </div>
+            <div class="Server-Side-logic">
+                <h1>Server-Side Logic</h1>
+                <p>Implementing backend functionality, managing databases, and developing APIs to power dynamic web applications.</p>
+            </div>
+        </div>
+    </div>
+    <div id="contact" class="contact">
+        <h2>Get in Touch</h2>
+        <h1>Contact Me</h1>
+        <div class="mail-holder">
+            <div class="mail-container">
+                <i class='bx bxs-envelope' ></i><p><a href="mailto:link.agnik@gmail.com">Mail me!</a></p>
+                <i class='bx bxl-linkedin-square' ></i><p onclick="window.open('https://www.linkedin.com/in/agnik-mondal-8b8654344/','_blank')" id="linkdin">Linkdin</p>
+            </div>
+        </div>
+        
+    </div>
+    <div class="credits">
+        <p>Copyright © 2025 Agnik Mondal. All Rights Reserved.</p>
+    </div>
+    <script src="script.js">
+    </script>
+</body>
+</html>
